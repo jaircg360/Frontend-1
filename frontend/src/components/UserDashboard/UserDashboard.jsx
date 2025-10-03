@@ -8,7 +8,7 @@ import ModelCharts from '../ModelCharts/ModelCharts';
 import './UserDashboard.css';
 
 const API_BASE_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://tu-backend-en-render.onrender.com' 
+  ? 'https://backend-1-1-sa5e.onrender.com' 
   : 'http://localhost:8000';
 
 const UserDashboard = () => {
