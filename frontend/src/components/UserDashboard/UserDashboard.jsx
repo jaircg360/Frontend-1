@@ -7,7 +7,9 @@ import { useNavigate } from 'react-router-dom';
 import ModelCharts from '../ModelCharts/ModelCharts';
 import './UserDashboard.css';
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = process.env.NODE_ENV === 'production' 
+  ? 'https://tu-backend-en-render.onrender.com' 
+  : 'http://localhost:8000';
 
 const UserDashboard = () => {
   const navigate = useNavigate();
